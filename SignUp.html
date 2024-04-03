@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+
+<h1>Sign up</h1>
+
+<form action="/submit_form" method="post" enctype="multipart/form-data">
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="full name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="@mail id"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" minlength="8" placeholder="8 characters"><br><br>
+
+    <label for="confirm_password">Confirm Password:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" minlength="8" placeholder="8 characters"><br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date Of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <!-- Photo Upload -->
+    Insert your photo:
+    <input type="file" id="photo" name="photo"><br><br>
+
+    <!-- Resume Upload -->
+    Insert your resume:
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <!-- Security Question Dropdown -->
+    Security Question:
+    <select id="security_question" name="security_question">
+        <!-- Options will be populated based on the available questions in the database or a predefined list -->
+        <!-- Example: -->
+        <!--<option value="question1">What is your pet's name?</option>-->
+    </select>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
